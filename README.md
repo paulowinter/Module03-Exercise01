@@ -1,9 +1,12 @@
-# Module02Exercise01
+# Module03Exercise01
 
 ## Running Emulator
 
-### Unclicked Button
-![Emulator](Screenshots/Unclicked.png)
+### Offline & Connection Success
+![Emulator](Screenshots/Offline.png)
+![Emulator](Screenshots/ConnectionSuccess.png)
 
-### Clicked Button
-![Emulator](Screenshots/Clicked.png)
+
+### Login Page & Login Success
+![Emulator](Screenshots/EmployeeLogin.png)
+![Emulator](Screenshots/LoginSuccess.png)
