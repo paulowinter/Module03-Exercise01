@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.OfflinePage"
+             Title="OfflinePage"
+              BackgroundColor="#FFD0D0">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label 
+            Text="Oops, You're currently offline!"
+            FontSize="Header"
+            FontAttributes="Bold"
+            TextColor="#A87676" 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Padding="0,80,0,0"/>
+
+            <Button 
+            Text="Retry"
+            Clicked="OnRetryButtonClicked"
+            HorizontalOptions="Center"
+            BackgroundColor="#CA8787" 
+                TextColor="White"
+            CornerRadius="10"
+            Padding="10,5" 
+                WidthRequest="100"/>
+
+            <Button 
+            Text="Close"
+            Clicked="OnCloseButtonClicked"
+            HorizontalOptions="Center"
+            BackgroundColor="#E1ACAC" 
+                    TextColor="White"
+            CornerRadius="10"
+            Padding="10,5"
+                WidthRequest="100"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

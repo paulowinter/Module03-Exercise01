@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.EmployeePage"
+             Title="EmployeePage">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <Label Text="Employee View" FontSize="Header"  HorizontalTextAlignment="Center"/>
+
+            <!-- Label bound to fullname property-->
+            <Label Text="{Binding FullName}" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+            <!-- Button bound to loadstudentdatacommand-->
+            <Button Text="Load Manager Data"
+                    Command="{Binding LoadManagerDataCommand}"/>
+
+            <Label Text="Employees:" FontSize="20"  Margin="0,0,0,-20"/>
+
+            <ListView ItemsSource="{Binding Employees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Fullnames}"
+                                  Detail="{Binding Informations}"
+                                  DetailColor="Gray"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
